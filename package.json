@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
+    "jest": "^29.4.3",
     "parcel": "^2.8.3"
   },
   "scripts": {
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "test": "jest"
   }
 }
