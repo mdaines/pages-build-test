@@ -26,17 +26,18 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build with Parcel
-        run: yarn build --public-url /pages-build-test
-        timeout-minutes: 1
-
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v3
+
+      - name: Build with Parcel
+        run: yarn build --public-url "${{ steps.pages.outputs.base_url }}/"
+        timeout-minutes: 1
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: dist
+          path: ./dist
 
   deploy:
     environment:
