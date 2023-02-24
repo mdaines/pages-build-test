@@ -1,0 +1,11 @@
+{
+  "name": "pages-build-test",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "build": "parcel build index.html"
+  }
+}
