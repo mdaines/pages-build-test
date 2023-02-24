@@ -27,7 +27,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build with Parcel
-        run: yarn build
+        run: yarn build --public-url /pages-build-test
         timeout-minutes: 1
 
       - name: Setup Pages
