@@ -1,3 +1,10 @@
+const { createRoot } = require("react-dom/client");
 const { blah } = require("./src/stuff.js");
 
-document.body.innerHTML = `<h1>${blah("123")}</h1>`;
+function App() {
+  return <h1>{blah("123")}</h1>;
+}
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+root.render(<App />);
