@@ -15,5 +15,8 @@
   "dependencies": {
     "htm": "^3.1.1",
     "preact": "^10.13.0"
+  },
+  "alias": {
+    "preact/jsx-dev-runtime": "preact/jsx-runtime"
   }
 }

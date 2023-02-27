@@ -1,3 +1,3 @@
 export function blah(str) {
-  return `Test ${str}`;
+  return `Test ${str}!`;
 }
