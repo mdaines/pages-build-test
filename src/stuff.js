@@ -1,3 +1,3 @@
-module.exports.blah = function(str) {
+export function blah(str) {
   return `Test ${str}`;
 }

@@ -1,5 +1,5 @@
-const { createRoot } = require("react-dom/client");
-const { blah } = require("./src/stuff.js");
+import { createRoot } from "react-dom/client";
+import { blah } from "./src/stuff.js";
 
 function App() {
   return <h1>{blah("123")}</h1>;
