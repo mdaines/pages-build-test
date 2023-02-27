@@ -1,10 +1,11 @@
-import { createRoot } from "react-dom/client";
+import { h, render } from "preact";
+import htm from "htm";
 import { blah } from "./src/stuff.js";
 
+const html = htm.bind(h);
+
 function App() {
-  return <h1>{blah("123")}</h1>;
+  return html`<h1>${blah("123")}</h1>`;
 }
 
-const container = document.getElementById("app");
-const root = createRoot(container);
-root.render(<App />);
+render(html`<${App}/>`, document.getElementById("app"));
