@@ -1,8 +1,8 @@
 name: Deploy to Pages
 
 on:
-  push:
-    branches: ["gh-pages"]
+  release:
+    types: [published]
 
 permissions:
   contents: read
